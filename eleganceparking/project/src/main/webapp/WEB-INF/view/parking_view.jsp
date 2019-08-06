@@ -47,6 +47,33 @@
     #xbutton { float:right; margin-right:10px; margin-top:5px; }
     #closebutton { float:right; }
     #infonote { padding-left:40px; padding-top:10px; }
+    
+    .dropb { position:relative; z-index:2 }
+    .dropdown-cc {
+        display:none;
+        position:absolute;
+        z-index:3;
+        background-color: white;
+        min-width: 160px;
+        min-height: 600px;
+        padding: 8px;
+    }
+    .dropdownsub {
+        padding-left:5px;
+        padding-bottom:5px;
+    }
+    
+    .dropb:hover .dropdown-cc{ display: block; }   
+    #map {position:relative; z-index:1}
+     
+    
+    .xxbutton { float:right; margin-right:3px; }
+   
+   
+    .headerButtondiv {display:-webkit-box; -webkit-box-orient:horizontal; float:right;}
+    .hButton1 {-webkit-box-ordinal-group:1;}
+    .hButton2 {-webkit-box-ordinal-group:2;}
+    
             
   </style>
   <!-- style, css 끝 -->
@@ -130,7 +157,7 @@ $(document).ready(function() {
 	    removable : iwRemoveable
 	});
 	
-	kakao.maps.event.addListener(marker, 'rightclick', function() {
+	kakao.maps.event.addListener(marker, 'click', function() {
 	      // 마커 위에 인포윈도우를 표시합니다
 	      infowindow.open(map, marker);  
 	      var lat = marker.getPosition().getLat();
@@ -302,15 +329,31 @@ $(document).ready(function() {
 		<!-- 로그인을 하지 않은 상태라면, 경고창이 뜨도록 -->
 		<c:if test='${empty user}'>			
 			<input type="button"class="headerButton" onclick="non_user();" value="즐겨 찾기">
-			<input type="button" class="headerButton" onclick="non_user();" value="주차 위치">			
+			<input type="button" class="headerButton" onclick="non_user();" value="주차 위치">
+			<input id="MyPosition" type="button" class="headerButton" value="내 위치">	
 		</c:if>
 		
 		<c:if test='${not empty user}'>
-			<a href=./parking.do><input type="button"class="headerButton" value="즐겨 찾기"></a>
-			<input id="MyParkPs"	type="button" class="headerButton" value="주차 위치">		
-			
-		</c:if>
+		<div class="hButton1">
 			<input id="MyPosition" type="button" class="headerButton" value="내 위치">
+			<input id="MyParkPs"	type="button" class="headerButton" value="주차 위치">
+		</div>
+		<div class="hButton2">
+			<div class="dropb" >
+				<button class="headerButton" style="color:white"><a>즐겨 찾기</a></button> 
+				   <div class="dropdown-cc">                  
+                   <div>
+                    <a href="#"><a class="dropdownsub">즐겨찾기 1</a></a>
+                    <span onclick="document.getElementById('info').style.display='none'" 
+                      class="xxbutton"><a>&times;</a></span>
+                  </div>       
+				
+				
+			</div>
+			</div>
+			
+		</div>
+		</c:if>			
 		</div>
           <!-- 위 button 끝 -->
        
