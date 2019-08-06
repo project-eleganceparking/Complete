@@ -455,8 +455,8 @@
           </script>         
              
          <div class="stopmapButton"> 
-          <input type="button" class="mapButton" onclick="polygonCreate()" value="단속 현황">          
-          <input type="button" class="mapButton" onclick="NoPark()"value="주정차 금지">
+          <input type="button" class="mapButton" onclick="polygonCreate()" value="주정차 위반현황">          
+          <input type="button" class="mapButton" onclick="NoPark()"value="주정차 금지구역">
           <input id="ShowAll" type="button" class="mapButton" value="모두 보기">
           <input id="NightShow" type="button" class="mapButton" value="주정차 야간가능">
           <input id="DayShow" type="button" class="mapButton" value="주정차 주간가능">

@@ -2024,7 +2024,7 @@ var polygon1 = new kakao.maps.Polygon({
     strokeWeight: 1, // 선의 두께입니다
     strokeColor: 'black', // 선의 색깔입니다
     strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다    
-    fillColor: 'cyan', // 채우기 색깔입니다
+    fillColor: 'orange', // 채우기 색깔입니다
     fillOpacity: 0.16 // 채우기 불투명도 입니다
 });
 var polygon2 = new kakao.maps.Polygon({
@@ -2032,7 +2032,7 @@ var polygon2 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.36
 });
 var polygon3 = new kakao.maps.Polygon({
@@ -2040,7 +2040,7 @@ var polygon3 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.43
 });
 var polygon4 = new kakao.maps.Polygon({
@@ -2048,7 +2048,7 @@ var polygon4 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.70
 });
 var polygon5 = new kakao.maps.Polygon({
@@ -2056,7 +2056,7 @@ var polygon5 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.35
 });
 var polygon6 = new kakao.maps.Polygon({
@@ -2064,7 +2064,7 @@ var polygon6 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.58
 });
 var polygon7 = new kakao.maps.Polygon({
@@ -2072,7 +2072,7 @@ var polygon7 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.19
 });
 var polygon8 = new kakao.maps.Polygon({
@@ -2080,7 +2080,7 @@ var polygon8 = new kakao.maps.Polygon({
     strokeWeight: 1,
     strokeColor: 'black',
     strokeOpacity: 0.8,
-    fillColor: 'cyan',
+    fillColor: 'orange',
     fillOpacity: 0.37
 });
 
