@@ -14,7 +14,7 @@
   
     .logo{ width:400px; }
     .headerButton{ float:right; margin-left:15px; margin-bottom:5px; width:120px; }
-    .mapButton{ float:right; margin-left:15px; margin-top:5px; width:120px; }
+    .mapButton{ float:right; margin-left:15px; margin-top:5px; width:140px; }
     .stopcentericon{ position:relative; text-align:center; }
     
     #loginbutton { margin-top:3px; width:90px  }
@@ -455,11 +455,11 @@
           </script>         
              
          <div class="stopmapButton"> 
-          <input type="button" class="mapButton" onclick="polygonCreate()" value="단속 현황">
-          <input id="ShowAll" type="button" class="mapButton" value="모두 보기">
+          <input type="button" class="mapButton" onclick="polygonCreate()" value="단속 현황">          
           <input type="button" class="mapButton" onclick="NoPark()"value="주정차 금지">
-          <input id="NightShow" type="button" class="mapButton" value="주정차 야간 가능">
-          <input id="DayShow" type="button" class="mapButton" value="주정차 주간 가능">
+          <input id="ShowAll" type="button" class="mapButton" value="모두 보기">
+          <input id="NightShow" type="button" class="mapButton" value="주정차 야간가능">
+          <input id="DayShow" type="button" class="mapButton" value="주정차 주간가능">
          </div>  
                   
           </div>
