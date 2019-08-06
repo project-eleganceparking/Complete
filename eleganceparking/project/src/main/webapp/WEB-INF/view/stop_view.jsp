@@ -14,7 +14,7 @@
   
     .logo{ width:400px; }
     .headerButton{ float:right; margin-left:15px; margin-bottom:5px; width:120px; }
-    .mapButton{ float:right; margin-left:10px; margin-top:5px; width:90px; }
+    .mapButton{ float:right; margin-left:15px; margin-top:5px; width:120px; }
     .stopcentericon{ position:relative; text-align:center; }
     
     #loginbutton { margin-top:3px; width:90px  }
@@ -59,7 +59,8 @@
   <script src ="./source/js/getPosition.js"></script>
   <script src ="./source/js/non_user_alert.js"></script>
   <script src ="./source/js/default_map.js"></script>
-  <script src ="./source/js/stop_view.js"></script>  
+  <script src ="./source/js/stop_view.js"></script>
+  <script src ="./source/js/polygon_create.js"></script>  
   <script>  
   $(document).ready(function() {
 	  $("#ShowAll").on("click",function(){
@@ -96,8 +97,8 @@
           var positions = [];
           
           <c:forEach var="lots" items="${RPlots}">
-          <c:if test="${lots.operday eq '주간'}">
-          positions.push({content:'<div>${lots.rpnum}<br>${lots.rpplacenm}<br>운영시간: ${lots.operday}</div>', latlng: new kakao.maps.LatLng(${lots.latitude}, ${lots.longitude})})
+          <c:if test="${lots.operday eq '야간'}">
+          positions.push({content:'<div>${lots.rpnum}<br>${lots.rpplacenm}<br>거주자(주간 무료)</div>', latlng: new kakao.maps.LatLng(${lots.latitude}, ${lots.longitude})})
           </c:if>
           </c:forEach>
           
@@ -154,8 +155,8 @@
 	  $("#NightShow").on("click",function(){
           var positions = [];
           <c:forEach var="lots" items="${RPlots}">
-          <c:if test="${lots.operday eq '야간'}">
-          positions.push({content:'<div>${lots.rpnum}<br>${lots.rpplacenm}<br>운영시간: ${lots.operday}</div>', latlng: new kakao.maps.LatLng(${lots.latitude}, ${lots.longitude})})
+          <c:if test="${lots.operday eq '주간'}">
+          positions.push({content:'<div>${lots.rpnum}<br>${lots.rpplacenm}<br>거주자(야간 무료)</div>', latlng: new kakao.maps.LatLng(${lots.latitude}, ${lots.longitude})})
           </c:if>
           </c:forEach>
           for (var i = 0; i < positions.length; i ++) {
@@ -454,7 +455,7 @@
           </script>         
              
          <div class="stopmapButton"> 
-          <input type="button" class="mapButton" value="단속 현황">
+          <input type="button" class="mapButton" onclick="polygonCreate()" value="단속 현황">
           <input id="ShowAll" type="button" class="mapButton" value="모두 보기">
           <input type="button" class="mapButton" onclick="NoPark()"value="주정차 금지">
           <input id="NightShow" type="button" class="mapButton" value="주정차 야간 가능">
