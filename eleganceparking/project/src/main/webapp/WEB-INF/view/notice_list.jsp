@@ -8,7 +8,7 @@
 <html>
 <head>
   
-  <title>Elegant Packing Stop</title>
+  <title>Notice</title>
    
   <!-- style, css 시작 -->
   <link rel='stylesheet' href='./source/css/style.css' type='text/css' media='all'/>
@@ -213,22 +213,36 @@
             <input type="submit" value="검색">
          </form>
       </div>
+   
+          </article>         
+    
+    </main>     
+  </div>
+</div>
+<!-- Main Content 끝 --> 
       
-    <!-- footer 시작 -->  
+      <br>
+      <br>
+      <br>
+      <br>                     
+ 
+ </div>
+      
+ <!-- footer 시작 -->  
   <footer id="colophon" class="site-footer">
     <div class="container">
       <div class="site-info">
-        <br>
-        <h3 style="font-family:'';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 20px;">코.하.친 (코딩하는친구들)</h3><br>
-        <a>Training for the 4th Industrial Revolution.</a><br>
-        <a>Open API를 활용한 빅데이터 전처리·시각화(B반), </a>
-        <a>2019</a>
-      </div>
+      <br>
+      <h3 style="font-family:'';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 20px;">코.하.친 (코딩하는친구들)</h3><br>
+      <a>Training for the 4th Industrial Revolution.</a><br>
+      <a>Open API를 활용한 빅데이터 전처리·시각화(B반), </a>
+      <a>2019</a>
     </div>
-  </footer>
-   <!-- footer 끝 -->    
-  
-  
-  </div>  
+  </div>
+  </footer> 
+ <!-- footer 끝 -->
+ 
+</div>
+
 </body>
 </html>

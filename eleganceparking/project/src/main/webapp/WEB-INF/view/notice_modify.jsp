@@ -5,7 +5,7 @@
 <html>
 <head>  
     
-  <title>View</title>
+  <title>Modify</title>
    
   <!-- style, css 시작 -->  
   <link rel='stylesheet' href='./source/css/style.css' type='text/css' media='all'/> 
